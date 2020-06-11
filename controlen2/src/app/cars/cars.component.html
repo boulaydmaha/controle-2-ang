@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row">
+
+      <div class="col-sm-3" *ngFor="let car of liste_voiture">
+        <img [src]="car.image" alt="Image">
+        <p> {{ car.immatriculation }}  </p>
+        
+        <button
+        class="btn btn-primary d-block m-auto"
+        (click)="goToDetailCar(car)"
+      >
+        Voir Plus
+      </button>
+
+      </div>
+ 
+       
+    </div>
+  </div>

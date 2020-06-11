@@ -1,0 +1,39 @@
+<div class="orders table-data table-data-crud orders-mvp">
+    <div class="section-inner">
+ 
+        <h3>Les informations des voitures</h3>
+
+
+        <div class="table-data-table align-left">
+        <table>
+            <thead class="table-data-thead">
+                <tr>
+                    <th>Order</th>
+                    <th>Date</th>
+                    <th>Customer</th>
+                    <th>Payment</th>
+                    <th>Fulfillment</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody class="table-data-tbody">
+                <tr class="unread">  
+                    <td data-th="Date of order"> <img [src]="voiture.image" alt="Image"></td>
+                    <td data-th="Customer"> Imm :{{ voiture.immatriculation }}</td> 
+                    <td data-th="Customer"> Marque  :  {{ voiture.marque }} <br> nobre  :  {{ voiture.nbr_sieges }} <br> Couleur {{ voiture.couleur }}</td> 
+                    
+                </tr>
+
+
+            </tbody>
+        </table>
+        
+    </div> 
+    </div>
+</div>
+ 
+ 
+<p>{{ voiture.id }}</p> 
+<p>{{ voiture.marque }}</p>
+<p>{{ voiture.couleur }}</p>
+<p>{{ voiture.nbr_sieges }}</p>
